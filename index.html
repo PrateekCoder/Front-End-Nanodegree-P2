@@ -49,25 +49,44 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
-    <div id="top" class="jumbotron" data-src="/view/images/highway_animation.gif" data-position="center right" style="height: 995px;">
-			<div class="container">
-				<h1>Prateek Gaurav</h1>
-				<p class="lead">Interactive Resume</p>
-			</div>
-      <div class="overlay"></div>
-
-			<a href="#header" class="scroll-down">
-				<span class="glyphicon glyphicon-chevron-down"></span>
-			</a>
+    <div id="top" class="jumbotron" data-position="center right" style="height: 995px;">
+        <div class="container">
+				    <h1>Prateek Gaurav</h1>
+				    <p class="lead">Interactive Resume</p>
+			  </div>
+        <div class="overlay"></div>
+        <a href="#header" class="scroll-down">
+				    <span class="glyphicon glyphicon-chevron-down"></span>
+			  </a>
 		</div>
-    <div id='cssmenu'>
-      <ul>
-        <li><a href="#header">Home</a></li>
-        <li><a href="#workExperience">Work</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#mapDiv">Find Me</a></li>
-        <li><a href="#letsConnect">Contact</a></li>
-      </ul>
+    <div class="container-fluid right-fix" id="cssmenu" >
+        <div class="row">
+            <nav class="col-sm-3" id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#header">About</a></li>
+                    <li><a href="#workExperience">Work</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#mapDiv">Find Me</a></li>
+                    <li><a href="#letsConnect">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid" id="linkmenu" >
+        <div class="row">
+            <nav class="col-sm-3" id="myScrollspy">
+                <ul class="nav nav-pills navbar-btn navbar-link" id="left">
+                    <li><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
+                    <li><a href="#googleplus.com"><span class="zocial-linkedin"></span></a></li>
+                    <li><a href="#twitter.com"><span class="zocial-twitter"></span></a></li>
+                    <li><a href="#linkedin.com"><span class="zocial-linkedin"></span></a></li>
+                    <li><a href="#facebook.com"><span class="zocial-facebook"></span></a></li>
+                    <li><a href="#quora.com"><span class="zocial-quora"></span></a></li>
+                    <li><a href="#github.com"><span class="zocial-github"></span></a></li>
+                    <li><a href="#googleplus.com"><span class="zocial-googleplus"></span></a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
     <div id="main">
@@ -79,25 +98,24 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       display by looking at the id or at what's written between the <h2> tags.
       -->
         <div id="header" class="center-content clearfix">
-          <ul id="topContacts" class='flex-box'></ul>
+            <ul id="topContacts" class='flex-box'></ul>
         </div>
         <div style='clear: both;'></div>
         <div id="workExperience" class='gray'>
-          <h2>Work Experience</h2>
+            <h2>Work Experience</h2>
         </div>
         <div id="projects">
-          <h2>Projects</h2>
+            <h2>Projects</h2>
         </div>
         <div id="education" class='gray'>
-          <h2>Education</h2>
+            <h2>Education</h2>
         </div>
         <div id="mapDiv">
-          <h2>Where I've Lived and Worked</h2>
+            <h2>Where I've Lived and Worked</h2>
         </div>
         <div id="letsConnect" class='dark-gray'>
-          <h2 class='orange center-text'>Let's Connect</h2>
-          <ul id="footerContacts" class="flex-box">
-          </ul>
+            <h2 class='orange center-text'>Let's Connect</h2>
+            <ul id="footerContacts" class="flex-box"></ul>
         </div>
     </div>
 
@@ -107,9 +125,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   writing. In resumeBuilder.js, you'll be writing code that builds the resume
   dynamically when this website, index.html, is opened.
   -->
-  <script src="js/resumeBuilder.js"></script>
+    <script src="js/resumeBuilder.js"></script>
 
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
 
   <!--
@@ -120,7 +138,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   course.
   -->
 
-  <script type="text/javascript">
+    <script type="text/javascript">
     // Notice how all of a sudden there's JavaScript inside this HTML
     // document? You can write JavaScript between <script> tags. At the end of your
     // JavaScript, don't forget the closing script tag with the slash (/).
