@@ -1,25 +1,11 @@
 <!DOCTYPE html>
 
-<!--
-This is an HTML document. It contains information about how elements in the website
-are arranged. In other words, it describes the layout of a website.
-
-I can't wait to see the resumes you put together!
-
-Cameron Pittman, Udacity Course Developer
--->
-
-<!--
-The <head> of a website generally links to important resources the page will
-need to load. You'll see a lot of <link>s to CSS files for styles and
-<scripts> for JavaScript files to build interactions.
--->
 <head>
   <!-- This tells the browser how to read the document. -->
   <meta charset="utf-8">
 
   <!-- Tells the browser what the title of this page should be. -->
-  <title>Resume</title>
+  <title>Prateek's Resume</title>
 
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -41,7 +27,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   -->
   <script src="js/jQuery.js"></script>
 
-  <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
 
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
@@ -59,11 +44,12 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 				    <span class="glyphicon glyphicon-chevron-down"></span>
 			  </a>
 		</div>
+    <!--Adding a navigation bar to move aronud the page. -->
     <div class="container-fluid right-fix" id="cssmenu" >
         <div class="row">
             <nav class="col-sm-3" id="myScrollspy">
                 <ul class="nav nav-pills nav-stacked">
-                    <li class="active"><a href="#header">About</a></li>
+                    <li><a href="#header">About</a></li>
                     <li><a href="#workExperience">Work</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#mapDiv">Find Me</a></li>
@@ -72,18 +58,19 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
             </nav>
         </div>
     </div>
+    <!--Adding a link Bar to connect directly to me.-->
     <div class="container-fluid" id="linkmenu" >
         <div class="row">
-            <nav class="col-sm-3" id="myScrollspy">
-                <ul class="nav nav-pills navbar-btn navbar-link" id="left">
+            <nav class="col-sm-3">
+                <ul class="nav nav-pills nav-stacked middle" id="left">
                     <li><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
-                    <li><a href="#googleplus.com"><span class="zocial-linkedin"></span></a></li>
-                    <li><a href="#twitter.com"><span class="zocial-twitter"></span></a></li>
-                    <li><a href="#linkedin.com"><span class="zocial-linkedin"></span></a></li>
-                    <li><a href="#facebook.com"><span class="zocial-facebook"></span></a></li>
-                    <li><a href="#quora.com"><span class="zocial-quora"></span></a></li>
-                    <li><a href="#github.com"><span class="zocial-github"></span></a></li>
-                    <li><a href="#googleplus.com"><span class="zocial-googleplus"></span></a></li>
+                    <li><a href="googleplus.com"><span class="zocial-linkedin"></span></a></li>
+                    <li><a href="twitter.com"><span class="zocial-twitter"></span></a></li>
+                    <li><a href="linkedin.com"><span class="zocial-linkedin"></span></a></li>
+                    <li><a href="facebook.com"><span class="zocial-facebook"></span></a></li>
+                    <li><a href="quora.com"><span class="zocial-quora"></span></a></li>
+                    <li><a href="github.com"><span class="zocial-github"></span></a></li>
+                    <li><a href="googleplus.com"><span class="zocial-googleplus"></span></a></li>
                 </ul>
             </nav>
         </div>
@@ -130,19 +117,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
 
-  <!--
-  These scripts are written in JavaScript. You'll be breaking them down as part of
-  a quiz. Essentially, the next few lines are checking to see if you have not
-  changed each section of the resume. If you have not made any changes to a section
-  of the resume, then that part of the resume does not show up. More on this in the
-  course.
-  -->
+  <!-- These scripts are written in JavaScript. -->
 
-    <script type="text/javascript">
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
-
+  <script type="text/javascript">
 
     // Also, this is a JavaScript style comment. You can comment in JavaScript with:
 
