@@ -1,6 +1,32 @@
-# The Resume Project
+# The Online Resume Project
 
-## How do I complete this project?
+##My Submission:
+
+1. Created four JSON's as required: bio, work, projects and education.
+2. Appended all the information from JSON to index.html as required.
+3. My resume includes an interactive map. Appended the googleMap string to `<div id=”map”>` as required.
+4. All of my code for adding elements to the resume is within functions. And all of my functions is encapsulated within the same objects containing my resume data.
+5. My resume also `console.log()`'s information about click locations.
+6. Included some google map API feature, like when you click on the location button, it zooms to that location.
+7. Internationalize Button has been included in the bottom of the Page.
+
+##Extra Features Included:
+
+1. The Front Page of my Online Resume has been customized, which includes a background image, with an overlay text,
+and also includes a down arrow customized glyphicon, which takes you directly to the header section of my Resume.
+This is how my front page of the online resume looks like:
+![](http://i67.tinypic.com/33mlitt.png)
+2. A customized Navigation bar has been included, to direct you to different section of the page, and its position is relative to it will follow you on the top right corner as you move up and down the page.
+3. A customized link bar, a navigation bar which can help you connect you to me by just a click on the different social networking icons, like twitter, facebook, linkendin, etc. It places on the left corner of the screen and its position has also been fixed, so yeah it will also follow you.
+This is how my customized navbar and link bar and the customized sections looks like:
+![](http://i65.tinypic.com/2vifep5.png)
+4. Different section of the resume has been customized with different backgroud-color, just to make the resume awesome!
+
+##My Experience.
+
+It was a nice experince to work on this project. I already had a good understanding of HTML, CSS and framework Bootstrap, from the last FEND project P1, and this project was a great help for me to understand what JS is and how HTML, CSS and JS are linked to each other.
+
+## How to complete this project, Suggestions by Udacity.
 
 1. If you need a refresher on JavaScript syntax, go to the [Javascript Basics course](https://www.udacity.com/course/viewer#!/c-ud804-nd); if you would like to understand how this project is manipulating and traversing the DOM, check out [Intro to jQuery](https://www.udacity.com/course/ud245-nd).
 2. Go through the videos and assignments in this course to learn the JavaScript necessary to build your resume.
