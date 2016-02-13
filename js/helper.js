@@ -168,12 +168,14 @@ function initializeMap() {
     // or hover over a pin on a map. They usually contain more information
     // about a location.
     var infoWindow = new google.maps.InfoWindow({
-      content: name
+      content: "Worked here!"
     });
 
     // hmmmm, I wonder what this is about...
-    google.maps.event.addListener(marker, 'click', function() {
+     google.maps.event.addListener(marker, 'click', function(){
       // your code goes here!
+      map.setZoom(12);
+      map.setCenter(marker.getPosition());
     });
 
     // this is where the pin actually gets added to the map.
