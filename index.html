@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- This tells the browser how to read the document. -->
+  <meta charset="utf-8">
+
+  <!-- Tells the browser what the title of this page should be. -->
+  <title>Prateek's Resume</title>
+
+  <!-- Load the page styles. -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!--BOOTSTRAP LINK  -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <!--
+  jQuery is a common JavaScript library for reading and making changes to the
+  Document Object Model (DOM). The DOM is a tree that contains information
+  about what is actually visible on a website.
+
+  While HTML is a static document, the browser converts HTML to the
+  DOM and the DOM can change. In fact, JavaScript's power comes from
+  its ability to manipulate the DOM, which is essentially a JavaScript
+  object. When JavaScript makes something interesting happen on a
+  website, it's likely the action happened because JavaScript changed
+  the DOM. jQuery is fast and easy to use, but it doesn't do anything
+  you can't accomplish with vanilla (regular) JavaScript.
+  -->
+  <script src="js/jQuery.js"></script>
+
+  <script src="js/helper.js"></script>
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div id="top" class="jumbotron" data-position="center right" style="height: 995px;">
+        <div class="container">
+				    <h1>Prateek Gaurav</h1>
+				    <p class="lead">Interactive Resume</p>
+			  </div>
+        <div class="overlay"></div>
+        <a href="#header" class="scroll-down">
+				    <span class="glyphicon glyphicon-chevron-down"></span>
+			  </a>
+		</div>
+    <!--Adding a navigation bar to move aronud the page. -->
+    <div class="container-fluid right-fix" id="cssmenu" >
+        <div class="row">
+            <nav class="col-sm-3" id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#header">About</a></li>
+                    <li><a href="#workExperience">Work</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#mapDiv">Find Me</a></li>
+                    <li><a href="#letsConnect">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Adding a link Bar to connect directly to me.-->
+    <div class="container-fluid" id="linkmenu" >
+        <div class="row">
+            <nav class="col-sm-3">
+                <ul class="nav nav-pills nav-stacked middle objectcenter" id="left">
+                    <li><a href="https://www.linkedin.com/in/prateekgaurav?trk=hp-identity-name"><img class="objectcenter" src="images/PNG/32px/459-linkedin2.png" alt="" /></a></li>
+                    <li><a href="https://twitter.com/PrateekGaurav23"><img class="objectcenter" src="images/PNG/32px/407-twitter.png" alt="" /></a></li>
+                    <li><a href="facebook.com"><img class="objectcenter" src="images/PNG/32px/402-facebook2.png" alt="" /></a></li>
+                    <li><a href="https://github.com/PrateekCoder"><img class="objectcenter" src="images/PNG/32px/433-github.png" alt="" /></a></li>
+                    <li><a href="google.com"><img class="objectcenter" src="images/PNG/32px/396-google-plus.png" alt="" /></a></li>
+                    <li><a href="youtube.com"><img class="objectcenter" src="images/PNG/32px/414-youtube.png" alt="" /></a></li>
+                    <li><a href="codepen.org"><img class="objectcenter" src="images/PNG/32px/489-codepen.png" alt="" /></a></li>
+                    <li><a href="pinterest.com"><img class="objectcenter" src="images/PNG/32px/466-pinterest.png" alt="" /></a></li>
+                    <li><a href="stackoverflow.com"><img class="objectcenter" src="images/PNG/32px/465-stackoverflow.png" alt="" /></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="main">
+
+      <!--
+      Everything from here to the <script> tag below is the skeleton of your
+      website. Your code will add information to each of the sections of the
+      resume below. You can pretty easily figure out what each section will
+      display by looking at the id or at what's written between the <h2> tags.
+      -->
+        <div id="header" class="center-content clearfix">
+            <ul id="topContacts" class='flex-box'></ul>
+        </div>
+        <div style='clear: both;'></div>
+        <div id="workExperience" class='gray'>
+            <h2>Work Experience</h2>
+        </div>
+        <div id="projects">
+            <h2>Projects</h2>
+        </div>
+        <div id="education" class='gray'>
+            <h2>Education</h2>
+        </div>
+        <div id="mapDiv">
+            <h2>Where I've Lived and Worked</h2>
+        </div>
+        <div id="letsConnect" class='dark-gray'>
+            <h2 class='orange center-text'>Let's Connect</h2>
+            <ul id="footerContacts" class="flex-box"></ul>
+        </div>
+    </div>
+
+
+  <!--
+  The next line tells the browser where to download the JavaScript file you'll be
+  writing. In resumeBuilder.js, you'll be writing code that builds the resume
+  dynamically when this website, index.html, is opened.
+  -->
+    <script src="js/resumeBuilder.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+  <!-- These scripts are written in JavaScript. -->
+
+  <script type="text/javascript">
+
+    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
+
+    //   two slashes for all following characters on a single line, or
+
+    /*
+        an opening and closing set of slash asterisks for block comments.
+    */
+
+
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.display = 'none';
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.display = 'none';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.display = 'none';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.display = 'none';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.backgroundColor = 'black';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('letsConnect').style.display = 'none';
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
