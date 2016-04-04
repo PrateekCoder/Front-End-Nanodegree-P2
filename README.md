@@ -1,5 +1,8 @@
 # The Online Resume Project
 
+##Link to Live Project Page:
+http://prateekcoder.github.io/Front-End-Nanodegree-P2-Online-Resume/
+
 ##My Submission:
 
 1. Created four JSON's as required: bio, work, projects and education.
